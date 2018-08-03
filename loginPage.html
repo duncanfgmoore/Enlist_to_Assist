@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="loginBG">
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <span class="navbar-brand">
+            Enlist to Assist
+          </span>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container whiteBG" id="login">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h3 class="color">Login</h3>
+        <form id="login-form">
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" placeholder="email@email.com">
+          </div>
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" placeholder="password">
+          </div>
+          <button type="submit" id="login-submit" class="btn btn-secondary hoursBtn">Login</button>
+        </form>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+  <div class="container whiteBG">
+    <div class="row hidden" id="SignUp">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h3 class="color">Sign-up</h3>
+        <form id="registration-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="signup-name-input" placeholder="Name">
+          </div>
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="signup-email-input" placeholder="email@email.com">
+          </div>
+          <div class="form-row">
+            <label for="gradYear">Graduation Year</label>
+            <input type="number" class="form-control" id="signup-year-input" placeholder="Graduation Year">
+          </div>
+          <div class="form-row">
+            <label for="userType">User Type</label>
+            <select class="form-control" id="signup-account-input">
+              <option>Student</option>
+              <option>Faculty</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="signup-password-input" placeholder="Password">
+          </div>
+          <div class="form-row">
+            <label for="password">Confirm Password</label>
+            <input type="password" class="form-control" id="signup-confirm-input" placeholder="Confirm password">
+          </div>
+          <button type="submit" class="btn btn-secondary hoursBtn" id="registration-submit">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+  <div class="row" id="loginButtons">
+    <div class="col-md-12">
+      <button type="submit" id="loginSelect" class="btn btn-primary hidden">Login</button>
+      <button type="submit" id="SignSelect" class="btn btn-primary">Sign Up</button>
+    </div>
+  </div>
+
+  <div class="container whiteBG" style="width: 400px">
+    <h2 style="text-align: center">Try Logging In!</h2>
+    <div style="text-align: center">
+      <h4>Student Log In</h4>
+      <p>Email: rb@email.com</p>
+      <p>Password: 123456</p>
+    </div>
+    <div style="text-align: center">
+      <h4>Faculty Log In</h4>
+      <p>Email: administrator@gmail.com</p> 
+      <p> Password: asdfasdf</p>
+    </div>
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0O0N_lrboA9D8sJedLi0qXl0r3nSeJKM&callback=initMap&libraries=visualization,places,geometry"
+    async defer></script>
+  <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
