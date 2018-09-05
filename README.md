@@ -18,3 +18,10 @@ Faculty will be directed to an admin page that will allow them to over see and t
 - Google Calender API
 - Bootstrap
 - CSS 
+
+# Login Page
+![screenshot](assets/images/groupProject1.jpeg)
+# Student Page
+![screenshot](assets/images/studentPage.jpeg)
+# Faculty Page
+![screenshot](assets/images/facultyPage.jpeg)
